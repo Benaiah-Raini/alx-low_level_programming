@@ -1,8 +1,11 @@
 #include <stdio.h>
+/**
+ * main - this is the main put function
+ * return:0 - the return value
+ *
+ */
 int main(void)
 {
-	char Mebenah[] = "Programming is like building a multilingual puzzle";
-
-	puts(Mebenah);
+	puts("Programming is like building a multilingual puzzle");
 	return (0);
 }

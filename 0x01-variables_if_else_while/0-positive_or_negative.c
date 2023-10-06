@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
-/* main-this the main fuction main with printf function */
+#include <stdio.h>
 
 /* main-this is the function main that return:0 and fuction printf */
 int main(void)
@@ -11,7 +11,7 @@ n = rand() - RAND_MAX / 2;
 /* your code goes here */
 if (n > 0)
 { /* n is positive */
-printf("is positive"\n);
+printf("is positive");
 }
 else if (n == 0)
 {/* n is zero */

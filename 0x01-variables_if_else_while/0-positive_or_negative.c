@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 
-/* main-this is the function main that return:0 and fuction printf */
+/* main function printf */
 int main(void)
 {
 int n;
@@ -11,15 +11,15 @@ n = rand() - RAND_MAX / 2;
 /* your code goes here */
 if (n > 0)
 { /* n is positive */
-printf("is positive");
+printf("is positive\n");
 }
 else if (n == 0)
 {/* n is zero */
-printf("is zero");
+printf("is zero\n");
 }
 else
 { /* n is negative */
-printf("is negative");
+printf("is negative\n");
 }
 return (0);/* return:0 */
 }

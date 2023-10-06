@@ -4,17 +4,11 @@
  *Return:0
  */
 int main(void)
-{
-char z;
-int w;
-long int y;
-long long int c;
-float x;
-
-printf("Size of a char:%lubyte(s)\n", (unsigned long)sizeof(z));
-printf("Size of an int:%lubyte(s)\n", (unsigned long)sizeof(w));
-printf("Size of a long int:%lubyte(s)\n", (unsigned long)sizeof(y));
-printf("Size of a long long int:%lubyte(s)\n", (unsigned long)sizeof(c));
-printf("Size of a float:%lubyte(s)\n", (unsigned long)sizeof(x));
+}
+printf("Size of a char:%zu byte(s)\n", sizeof(char));
+printf("Size of an int:%zu byte(s)\n", sizeof(int));
+printf("Size of a long int:%zu byte(s)\n", sizeof(long int));
+printf("Size of a long long int:%zu byte(s)\n", sizeof(long long int));
+printf("Size of a float:%zu byte(s)\n", sizeof(float));
 return (0);
 }

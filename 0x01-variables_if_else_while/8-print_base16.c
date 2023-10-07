@@ -6,13 +6,10 @@
 int main(void)
 {
 int num;
-char bena;
-for (num = 0; num < 10; num++)
+for (num = 0; num <= 15; num++)
 {
-putchar((num % 10) + '0');
-for (bena = 'a'; bena <= 'f'; bena++)
-putchar(bena);
+printf("%x", num);
 }
-putchar('\n');
+printf("\n");
 return (0);
 }

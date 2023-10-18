@@ -1,32 +1,24 @@
 #include "main.h"
-
 /**
-  * _strncat - the main function
-  * @n: Function parameter
-  *
-  * @src: Function parameter
-  *
-  * @dest: Function parammeter
-  *
-  * Return: dest
-  */
-char *_strncat(char *dest, char *src, int n)
+ *_strcat - This is the function that concatenates two strings.
+ *@dest: pointer to destination string.
+ *@src: pointer to source string.
+ *
+ *Return: pointer to destination string.
+ */
+char *_strcat(char *dest, char *src)
 {
-int k, r;
+int length, j;
 
-k = 0;
-r = 0;
-
-while (dest[k] != '\0')
+length = 0;
+while (dest[length] != '\0')
 {
-k++;
+length++;
 }
-while (r < n && src[r] != '\0')
+for (j = 0; src[j] != '\0'; j++, length++)
 {
-dest[k] = src[r];
-k++;
-r++;
+dest[length] = src[j];
 }
-dest[k] = '\0';
+dest[length] = '\0';
 return (dest);
 }
